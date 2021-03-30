@@ -1,0 +1,12 @@
+typedef struct elemento Elemento;
+Elemento * elemento_cria (char * nome, char * fone, int ligacao);
+Elemento * elemento_copia (Elemento * p);
+void elemento_libera (Elemento * p);
+void elemento_altera (Elemento * p, char * nome, char * fone, int ligacao);
+void elemento_altera_proximo (Elemento * p, Elemento * proximo);
+char * elemento_obtem_nome (Elemento * p);
+char * elemento_obtem_fone (Elemento * p);
+int elemento_obtem_ligacao (Elemento * p);
+Elemento * elemento_obtem_proximo (Elemento * p);
+char * elemento_imprime  (Elemento * p);
+int elemento_compara (Elemento * p1, Elemento * p2);
